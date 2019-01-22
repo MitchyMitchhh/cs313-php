@@ -9,7 +9,7 @@
 
 </head>
 
-<a href="Assign.php">assign01</a></li>
+<a href="Assign.php">Go to Assignment page</a></li>
 
 <body class="mountain-bg">
 
@@ -22,7 +22,7 @@
 	<div class="jumbotron">
 	<h2>About Me</h2>
 
-	<p>At Make your own Mountain, we believe that everyone should have their own mountain. Whether you are ready for a full-scale mountain, or just getting started with your first hill in the backyard, we have you covered.</p>
+	<p>Hello, my name is Mitchell Porter. I'm a 21 year old who is a junior at BYUI, majoring in software engineering and minoring in data science. I love programming, but I dont have much of an artistic eye for design. My hobbies are mostly made of basketball and video games, but I'll do just about anything with good company, I like to try to diversify my interests when an opportunity arises.</p>
 
 	</div>
 </div>
