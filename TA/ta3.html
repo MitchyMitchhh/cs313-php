@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="es3.css">
+	<style>
+		h1 {
+			text-align: center;
+		}
+
+		h2 {
+			margin-right: 50px;
+   	 		margin-left: 50px;
+   	 		font-size: 28px;
+		}
+
+		p {
+			margin-right: 0px;
+   	 		margin-left: 0px;
+   	 		background-color: white;
+			color: black;
+			margin-top: 25px;
+    		margin-bottom: 25px;
+		}
+
+		input[type=text] {
+	    	border: 1px solid black;
+	    	border-radius: 4px;
+	    	width: 200px;
+	    	height: 25px
+		}
+
+		textarea {
+			border: 1px solid black;
+	    	border-radius: 4px;
+		}
+		 
+	</style>	
+	<title>TA 3</title>
+</head>
+
+<body>
+
+	<div style="background-color:white; color:black; margin-left: 50px; margin-right: 50px;">
+     	<form action="">
+
+      		<p style="font-weight: bold;"> Name:</p>
+      		<input type="text" name="firstname"><br>
+      
+	      	<p style="font-weight: bold;"> Email Address:</p>
+	      	<input type="text" name="email" style="width:250px;"><br>
+
+	      	<p style="font-weight: bold;">Major</p>
+	      	<input type="radio" name="best" value="a"> 10$ or less<br>
+	      	<input type="radio" name="best" value="b"> 15$ or less<br>
+	      	<input type="radio" name="best" value="c"> 20$ or less<br>
+	      	<input type="radio" name="best" value="c"> I would never be caught dead wearing that shirt<br>
+
+	      	<p style="font-weight: bold;">Comments</p>
+	      	<textarea name="Text1" cols="40" rows="5"></textarea><br>
+	      	
+	      	<!--
+		    <p style="font-weight: bold;">Which of the shirts would you reccomend to someone else?</p>
+		    <input type="checkbox" name="vehicle" value="1"> Computer Science Shirt<br>
+		    <input type="checkbox" name="vehicle" value="2"> Stack Overflow Shirt<br>
+		    <input type="checkbox" name="vehicle" value="3"> Hello World Shirt<br>
+		    --->
+		     
+		    <p style="font-weight: bold;">What type of apparel would you like to see us sell next?</p>
+		    <select>
+		       	<option value="first">Pants</option>
+		       	<option value="second">Sweaters</option>
+		       	<option value="third">Underwear</option>
+		       	<option value="fourth">Watches</option>
+		    </select>
+		    <br>
+		    <br>
+		    <input type="reset" value="Reset">
+		    <input type="submit" value="Submit">
+
+		</form>
+    </div>
+</body>
+
+</html>
