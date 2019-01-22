@@ -24,8 +24,11 @@
 
 <img src="Friends.jpeg" alt="friends" class="center">
 
+<div class = "date">
 <?php
-echo "div class = "date" Today is " . date("Y/m/d") . "<br>";
+echo " Today is " . date("Y/m/d") . "<br>";
 ?>
+</div>
+
 </body>
 </html>
