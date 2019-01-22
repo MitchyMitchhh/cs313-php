@@ -24,7 +24,7 @@
 
 </div>
 
-<img class="center" src="Friends.jpeg" alt="friends">
+<img src="Friends.jpeg" alt="friends" class="center">
 
 </body>
 </html>
