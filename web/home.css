@@ -13,4 +13,6 @@ body, html {
 .about {
 	color: white;
 	background-color: #0A5E07
+	font-size: large;
+	font-family: Arial, Helvetica, sans-serif;
 }
