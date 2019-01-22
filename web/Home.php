@@ -25,7 +25,7 @@
 <img src="Friends.jpeg" alt="friends" class="center">
 
 <?php
-echo "Today is " . date("Y/m/d") . "<br>";
+echo "div class = "date" Today is " . date("Y/m/d") . "<br>";
 ?>
 </body>
 </html>
