@@ -9,7 +9,7 @@
 
 </head>
 
-<a href="Assign.php">Go to Assignment Page</a></li>
+<a href="Assign.php" class="button">Go to Assignment Page</a></li>
 
 <body>
 
@@ -26,7 +26,7 @@
 
 <div class = "date">
 <?php
-echo " Today is " . date("Y/m/d") . "<br>";
+echo " Today is " . date("d/m/Y") . "<br>";
 ?>
 </div>
 

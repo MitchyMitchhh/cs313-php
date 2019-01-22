@@ -9,7 +9,7 @@
 
 </head>
 
-<a href="Home.php">Back to Intro Page</a></li>
+<a href="Home.php" class="button">Back to Intro Page</a></li>
 
 	<div class="jumbotron">
 	<h2>Assignment List</h2>
