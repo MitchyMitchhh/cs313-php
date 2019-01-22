@@ -13,9 +13,7 @@
 
 <body>
 
-<?php
-echo "Today is " . date("Y/m/d") . "<br>";
-?>
+
 
 <div class="about">
 	<h2>About Me</h2>
@@ -26,5 +24,8 @@ echo "Today is " . date("Y/m/d") . "<br>";
 
 <img src="Friends.jpeg" alt="friends" class="center">
 
+<?php
+echo "Today is " . date("Y/m/d") . "<br>";
+?>
 </body>
 </html>
