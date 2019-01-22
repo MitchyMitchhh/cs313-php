@@ -56,6 +56,6 @@ body, html {
 }
 
 .button:hover span:after {
-  opacity: 1;
+  opacity: .5;
   right: 0;
 }
