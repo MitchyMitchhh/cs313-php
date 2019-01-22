@@ -16,3 +16,7 @@ body, html {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 200%;
 }
+
+.date {
+	text-align: right;
+}
