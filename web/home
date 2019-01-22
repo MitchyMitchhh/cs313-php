@@ -2,13 +2,9 @@ body, html {
 	height: 100%;
 }
 
-.mountain-bg {
-	background-image: url("Friends.jpeg");
-	height:100%;
-
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover
+.image-center {
+	height:24px;
+	vertical-align: middle;
 }
 
 .jumbotron {
