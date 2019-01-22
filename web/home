@@ -3,7 +3,7 @@ body, html {
 }
 
 .mountain-bg {
-	background-image: url("tetons.jpg");
+	background-image: url("Friends.jpg");
 	height:100%;
 
 	background-position: center;
