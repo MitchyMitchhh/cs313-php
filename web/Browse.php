@@ -20,12 +20,11 @@
 			<input type="checkbox" name="fruit" id="banan" value="banan"><label>Bananas</label><br />
 			<input type="checkbox" name="fruit" id="orang" value="orang"><label>Oranges</label><br />
 			<br />
-
-
 			<br />
 			<input type="submit" value="Submit Answers">
 
 			<br />
+			<br /><br />
 			<a href="Cart.php">Go to your Fruit Basket!</a>
 		</form>
 
