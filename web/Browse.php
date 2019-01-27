@@ -5,7 +5,7 @@
 	</head>
 
 	<body>
-		<form method="POST" action="Browse.php">
+		<form method="POST" action="">
 			<p>Please answer the following questions:</p>
 
 			<label for="name">Name</label>
