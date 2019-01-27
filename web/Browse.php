@@ -14,7 +14,7 @@
 			<img class="resize" src="banana.jpg">
 			<img class="resize" src="orange.jpg">
 			<br />
-			<p>Which fruit do you want?</p><br />
+			<p>Select the fruit you want to add to your basket!</p><br />
 			<input type="checkbox" name="fruit" id="straw" value="straw"><label>Strawberries</label><br />
 			<input type="checkbox" name="fruit" id="water" value="water"><label>Watermelon</label><br />
 			<input type="checkbox" name="fruit" id="banan" value="banan"><label>Bananas</label><br />
@@ -25,7 +25,7 @@
 			<br />
 			<input type="submit" value="Submit Answers">
 
-
+			<a href="Cart.php">Go to your Fruit Basket!</a>
 		</form>
 
 	</body>
