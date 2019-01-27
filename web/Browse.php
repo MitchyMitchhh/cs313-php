@@ -23,8 +23,7 @@
 			<br />
 			<input type="submit" value="Submit Answers">
 
-			<br />
-			<br /><br />
+			<br /><br /><br />
 			<a href="Cart.php">Go to your Fruit Basket!</a>
 		</form>
 
