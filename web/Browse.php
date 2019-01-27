@@ -9,10 +9,10 @@
 		<form method="POST" action="">
 			<p>Fruit is the best, which fruit would you like to eat?:</p>
 
-			<img src="strawberries.jpg">
-			<img src="watermelon.jpg">
-			<img src="banana.jpg">
-			<img src="orange.jpg">
+			<img class="resize" src="strawberries.jpg">
+			<img class="resize" src="watermelon.jpg">
+			<img class="resize" src="banana.jpg">
+			<img class="resize" src="orange.jpg">
 			Which fruit do you want?<br />
 			<input type="checkbox" name="fruit" id="straw" value="straw"><label>Strawberries</label><br />
 			<input type="checkbox" name="fruit" id="water" value="water"><label>Watermelon</label><br />
