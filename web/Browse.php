@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PHP Form Submission Activity</title>
+		<title>Browse</title>
 	</head>
 
 	<body>
-		<form method="POST" action="results.php">
+		<form method="POST" action="Browse.php">
 			<p>Please answer the following questions:</p>
 
 			<label for="name">Name</label>
