@@ -5,7 +5,7 @@
 </head>
 
 <body>
-
+<p>here</p>
 <?
 foreach ($fruits as $fruit)
 {
