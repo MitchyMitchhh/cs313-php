@@ -1,3 +1,7 @@
+<<?php 
+session_start()
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +13,7 @@
 <?php
 foreach ($fruits as $fruit)
 {
-	$fruit_clean = htmlspecialchars($fruit);
+	$fruit_clean = htmlspecialchars($_SESSION["fruit"]);
 	echo "<li><p>$fruit_clean</p></li>";
 }
 ?>		
