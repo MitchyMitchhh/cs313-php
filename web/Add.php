@@ -5,7 +5,6 @@ $fruit = $_POST["fruit"];
 setcookie($fruit)
 
 
-header("Browse.php"); /* Redirect browser */
-exit();
+header(Location: "Browse.php"); /* Redirect browser */
 
  ?>
