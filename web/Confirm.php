@@ -1,5 +1,9 @@
 <?php 
 session_start()
+
+$city = htmlspecialchars($_POST["city"]);
+$state = htmlspecialchars($_POST["state"]);
+$address = htmlspecialchars($_POST["address"]);
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +22,12 @@ foreach ($_SESSION[fruit] as $fruit)
 	echo "<li>$fruit_clean</li>";
 }
 ?>		
+
+<h1>Checkout Information</h1>
+
+<p>Your city is: <?=$city ?></p>
+<p>Your state is: <?=$state ?></a></p>
+<p>Your address is: <?=$address ?></p>
 
 </body>
 
