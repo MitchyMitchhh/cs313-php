@@ -18,6 +18,7 @@ foreach ($_SESSION[fruit] as $fruit)
 }
 ?>		
 
+<br>
 <a href="Browse.php">Go back to Browse!</a>
 <br>
 <a href="Checkout.php">Go to checkout!</a>

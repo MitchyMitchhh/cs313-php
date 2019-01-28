@@ -16,7 +16,7 @@ foreach ($_SESSION[fruit] as $fruit)
 {
 	$fruit_clean = htmlspecialchars($fruit);
 	echo "<li>$fruit_clean</li>";
-
+}
 ?>		
 
 </body>
