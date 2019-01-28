@@ -14,6 +14,9 @@ foreach ($fruits as $fruit)
 }
 ?>		
 
+<a href="Browse.php">Go back to Browse!</a>
+<a href="Checkout.php">Go to checkout!</a>
+
 </body>
 
 
