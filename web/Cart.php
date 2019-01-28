@@ -31,6 +31,8 @@ foreach ($_SESSION[fruit] as $fruit)
 </form>
 
 <?
+$_SESSION["ufruit"] = $_POST["ufruit"];
+
 foreach ($_REQUEST[ufruit] as $key) {
     unset($_SESSION[fruit][$key]);
 }
