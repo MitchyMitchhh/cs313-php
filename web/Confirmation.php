@@ -1,5 +1,5 @@
 <?php 
-session_start()
+session_start();
 
 $city = htmlspecialchars($_POST["city"]);
 $state = htmlspecialchars($_POST["state"]);
