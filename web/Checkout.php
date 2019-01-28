@@ -21,14 +21,14 @@
 	<input type="text" placeholder="Address" id="address" name="address">
 	<br />
 
-	<input type="submit" value="Submit Answers">
+	<input type="submit" value="Checkout">
 
 </form>
 
 <a href="Cart.php">Go back to Fruit Basket!</a>
 <br>
-<a href="Confirm.php">Go to confirmation!</a>
-
+<!-- <a href="Confirm.php">Go to confirmation!</a>
+ -->
 </body>
 
 
