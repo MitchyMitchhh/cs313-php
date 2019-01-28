@@ -9,7 +9,7 @@ session_start()
 </head>
 
 <body>
-<p>here</p>
+<p>Your Fruit Basket:</p>
 <?php
 foreach ($_SESSION[fruit] as $fruit)
 {
