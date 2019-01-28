@@ -25,9 +25,9 @@ foreach ($_SESSION[fruit] as $fruit)
 
 <h1>Checkout Information</h1>
 
-<p>Your city is: <?=$city ?></p>
-<p>Your state is: <?=$state ?></a></p>
-<p>Your address is: <?=$address ?></p>
+<p>Your city is: <? echo "$city"; ?></p>
+<p>Your state is: <? echo "$state"; ?></a></p>
+<p>Your address is: <? echo "$address"; ?></p>
 
 </body>
 
