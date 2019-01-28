@@ -1,9 +1,9 @@
 <?php 
 session_start()
 
-$city = htmlspecialchars($_POST["city"]);
-$state = htmlspecialchars($_POST["state"]);
-$address = htmlspecialchars($_POST["address"]);
+// $city = htmlspecialchars($_POST["city"]);
+// $state = htmlspecialchars($_POST["state"]);
+// $address = htmlspecialchars($_POST["address"]);
 ?>
 
 <!DOCTYPE html>
