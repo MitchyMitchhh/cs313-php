@@ -6,5 +6,6 @@ setcookie($fruit)
 
 
 header("Location: Browse.php"); /* Redirect browser */
+exit()
 
  ?>
