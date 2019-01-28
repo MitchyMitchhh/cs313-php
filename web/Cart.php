@@ -32,7 +32,7 @@ foreach ($_SESSION[fruit] as $fruit)
 
 <?
 foreach ($_REQUEST[ufruit] as $key) {
-    unset($_SESSION["fruit"][$key]);
+    unset($_SESSION[fruit][$key]);
 }
 ?>
 
