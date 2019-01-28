@@ -1,7 +1,7 @@
 <<?php 
 
-// session_start()
-// $fruit = $_POST["fruit"];
+session_start()
+$fruit = $_POST["fruit"];
 // setcookie($fruit)
 
 
