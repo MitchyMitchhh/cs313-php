@@ -18,6 +18,22 @@ foreach ($_SESSION[fruit] as $fruit)
 }
 ?>		
 
+<p>Would you like to remove any of the items?</p>
+
+
+<form action="" post="POST">
+	<input type="checkbox" name="ufruit[]" id="straw" value="Strawberries"><label>Strawberries</label><br />
+	<input type="checkbox" name="ufruit[]" id="water" value="Watermelon"><label>Watermelon</label><br />
+	<input type="checkbox" name="ufruit[]" id="banan" value="Bananas"><label>Bananas</label><br />
+	<input type="checkbox" name="ufruit[]" id="orang" value="Oranges"><label>Oranges</label><br />
+</form>
+
+<?
+foreach ($_REQUEST[ufruit] as $key) {
+    unset($_SESSION["fruit"][$key]);
+}
+?>
+
 <br>
 <a href="Browse.php">Go back to Browse!</a>
 <br>

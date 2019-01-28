@@ -14,7 +14,7 @@ $address = htmlspecialchars($_POST["address"]);
 </head>
 
 <body>
-<p>Confirm your fruit order:</p>
+<p>Your order confirmation:</p>
 
 <?
 foreach ($_SESSION[fruit] as $fruit)
