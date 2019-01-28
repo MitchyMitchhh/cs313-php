@@ -5,14 +5,25 @@
 </head>
 
 <body>
-<p>here</p>
-<?php
-foreach ($fruits as $fruit)
-{
-	$fruit_clean = htmlspecialchars($fruit);
-	echo "<li><p>$fruit_clean</p></li>";
-}
-?>		
+<p>Please enter your checkout information:</p>
+
+<form method="POST" action="Confirm.php">
+
+	<label for="city">City</label>
+	<input type="text" placeholder="City" id="city" name="city">
+	<br />
+
+	<label for="state">State</label>
+	<input type="text" placeholder="State" id="state" name="state">
+	<br />
+
+	<label for="address"></label>
+	<input type="text" placeholder="Address" id="address" name="address">
+	<br />
+
+	<input type="submit" value="Submit Answers">
+
+</form>
 
 <a href="Cart.php">Go back to Fruit Basket!</a>
 <br>
