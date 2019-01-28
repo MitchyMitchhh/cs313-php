@@ -26,6 +26,8 @@ foreach ($_SESSION[fruit] as $fruit)
 	<input type="checkbox" name="ufruit[]" id="water" value="Watermelon"><label>Watermelon</label><br />
 	<input type="checkbox" name="ufruit[]" id="banan" value="Bananas"><label>Bananas</label><br />
 	<input type="checkbox" name="ufruit[]" id="orang" value="Oranges"><label>Oranges</label><br />
+	<br />
+	<input type="submit" value="Remove">
 </form>
 
 <?
