@@ -14,7 +14,7 @@ session_start()
 foreach ($_SESSION[fruit] as $fruit)
 {
 	$fruit_clean = htmlspecialchars($fruit);
-	echo "<li><p>$fruit_clean</p></li>";
+	echo "<li>$fruit_clean</li>";
 }
 ?>		
 

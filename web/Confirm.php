@@ -10,12 +10,13 @@ session_start()
 
 <body>
 <p>Confirm your fruit order:</p>
+
 <?php
 foreach ($_SESSION[fruit] as $fruit)
 {
 	$fruit_clean = htmlspecialchars($fruit);
-	echo "<li><p>$fruit_clean</p></li>";
-}
+	echo "<li>$fruit_clean</li>";
+
 ?>		
 
 </body>
