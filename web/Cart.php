@@ -11,9 +11,9 @@ session_start()
 <body>
 <p>here</p>
 <?php
-foreach ($fruits as $fruit)
+foreach ($_SESSION[fruit] as $fruit)
 {
-	$fruit_clean = htmlspecialchars($_SESSION["fruit"]);
+	$fruit_clean = htmlspecialchars($fruit);
 	echo "<li><p>$fruit_clean</p></li>";
 }
 ?>		
