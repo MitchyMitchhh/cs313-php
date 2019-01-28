@@ -1,9 +1,10 @@
 <?php 
 session_start()
 
-// $city = htmlspecialchars($_POST["city"]);
-// $state = htmlspecialchars($_POST["state"]);
-// $address = htmlspecialchars($_POST["address"]);
+$city = htmlspecialchars($_POST["city"]);
+$state = htmlspecialchars($_POST["state"]);
+$address = htmlspecialchars($_POST["address"]);
+
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +25,7 @@ foreach ($_SESSION[fruit] as $fruit)
 ?>		
 
 <h1>Checkout Information</h1>
+
 
 
 </body>
