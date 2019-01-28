@@ -7,7 +7,7 @@
 <body>
 <p>Please enter your checkout information:</p>
 
-<form method="POST" action="Confirm.php">
+<form method="POST" action="Cart.php">
 
 	<label for="city">City</label>
 	<input type="text" placeholder="City" id="city" name="city">
