@@ -31,7 +31,7 @@ foreach ($_SESSION[fruit] as $fruit)
 </form> -->
 
 <?
-	echo "<td><a href='new_php_page.php?key=$key'>Remove Item</td>";
+	echo "<td><a href='Cart.php?key=$key'>Remove Item</td>";
 	
 	if (array_key_exists($_POST['key'], $_SESSION['fruit'])) {
   		unset($_SESSION['fruit']);
