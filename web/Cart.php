@@ -31,10 +31,10 @@ foreach ($_SESSION[fruit] as $fruit)
 </form> -->
 
 <?
-	echo "<td><a href='Cart.php?key=$key'>Remove Item</td>";
+	echo "<td><input type=checkbox name='remove[$key]' value=1>remove</td>";
 	
-	if (array_key_exists($_POST['key'], $_SESSION['fruit'])) {
-  		unset($_SESSION['fruit']);
+	foreach ($_REQUEST["remove"] as $key) {
+    	unset($_SESSION["fruit"][$key]);
 	}
 	// foreach ($_REQUEST["ufruit"] as $key) {
  //    	unset($_SESSION["fruit"][$key]);
