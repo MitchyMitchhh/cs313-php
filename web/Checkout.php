@@ -21,7 +21,7 @@
 	<input type="text" placeholder="Address" id="address" name="address">
 	<br />
 
-	<input type="submit" value="Checkout">
+	<input type="submit" value="Submit Answers">
 
 </form>
 
