@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 session_start()
 
 $city = htmlspecialchars($_POST["city"]);
@@ -32,4 +32,4 @@ foreach ($_SESSION[fruit] as $fruit)
 </body>
 
 
-</html>
+</html> -->
