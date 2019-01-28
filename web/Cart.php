@@ -6,7 +6,7 @@
 
 <body>
 <p>here</p>
-<?
+<?php
 foreach ($fruits as $fruit)
 {
 	$fruit_clean = htmlspecialchars($fruit);
