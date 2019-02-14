@@ -8,7 +8,7 @@
 <p>Login to your Video Game Log Account:</p>
 
 <p>Please enter your username and passord or register a new account:</p>
-<form method="POST" action=".php">
+<form method="POST" action="Authenticate.php">
 
 	<label for="username">Username</label>
 	<input type="text" placeholder="User Name" id="username" name="username">
