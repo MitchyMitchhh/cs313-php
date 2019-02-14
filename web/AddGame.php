@@ -5,24 +5,24 @@
 </head>
 
 <body>
-<p>Please enter your checkout information:</p>
+<p>Log your Video Game information:</p>
 
 <form method="POST" action="BackgroundAdd.php">
 
 	<label for="firstname">First Name</label>
-	<input type="text" placeholder="Firstname" id="firstname" name="firstname">
+	<input type="text" placeholder="First Name" id="firstname" name="firstname">
 	<br />
 
 	<label for="lastname">Last Name</label>
-	<input type="text" placeholder="Lastname" id="lastname" name="lastname">
+	<input type="text" placeholder="Last Name" id="lastname" name="lastname">
 	<br />
 
-	<label for="email"></label>
+	<label for="email">Email</label>
 	<input type="email" placeholder="Email" id="email" name="email">
 	<br />
 
 	<label for="gamename">Game Name</label>
-	<input type="text" placeholder="GameName" id="gameName" name="gameName">
+	<input type="text" placeholder="Game Name" id="gameName" name="gameName">
 	<br />
 
 	<label for="developer">Developer</label>
@@ -34,15 +34,15 @@
 	<br />
 
 	<label for="releasedate">Release Date</label>
-	<input type="date" placeholder="Releasedate" id="releasedate" name="releasedate">
+	<input type="date" placeholder="Release Date" id="releasedate" name="releasedate">
 	<br />
 
 	<label for="completeddate">Completed Date</label>
-	<input type="date" placeholder="Completeddate" id="completeddate" name="email">
+	<input type="date" placeholder="Completed Date" id="completeddate" name="email">
 	<br />
 
 	<label for="completiontime">Completion Time</label>
-	<input type="text" placeholder="Completiontime" id="completiontime" name="completiontime">
+	<input type="text" placeholder="Completion Time" id="completiontime" name="completiontime">
 	<br />
 
 	<label for="rating">Personal Rating</label>
@@ -55,6 +55,7 @@
 	<br />
 
 	<label for="comment">Extra Comment</label>
+	<textarea name="Text1" cols="40" rows="5" id="comment name="comment"></textarea>
 	<input type="text" placeholder="Comment" id="comment" name="comment">
 	<br />
 
