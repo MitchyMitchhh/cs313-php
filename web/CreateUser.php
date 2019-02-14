@@ -7,7 +7,7 @@
 <body>
 <p>Log your Video Game information:</p>
 
-<form method="POST" action="BackgroundAdd.php">
+<form method="POST" action="Login.php">
 
 	<label for="firstname">First Name</label>
 	<input type="text" placeholder="First Name" id="firstname" name="firstname">
