@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Games</title>
+</head>
+
+<body>
+<p>Please enter your checkout information:</p>
+
+<form method="POST" action="BackgroundAdd.php">
+
+	<label for="firstname">First Name</label>
+	<input type="text" placeholder="Firstname" id="firstname" name="firstname">
+	<br />
+
+	<label for="lastname">Last Name</label>
+	<input type="text" placeholder="Lastname" id="lastname" name="lastname">
+	<br />
+
+	<label for="email"></label>
+	<input type="email" placeholder="Email" id="email" name="email">
+	<br />
+
+	<label for="gamename">Game Name</label>
+	<input type="text" placeholder="GameName" id="gameName" name="gameName">
+	<br />
+
+	<label for="developer">Developer</label>
+	<input type="text" placeholder="Developer" id="developer" name="developer">
+	<br />
+
+	<label for="publisher">Publisher</label>
+	<input type="text" placeholder="Publisher" id="publisher" name="publisher">
+	<br />
+
+	<label for="releasedate">Release Date</label>
+	<input type="date" placeholder="Releasedate" id="releasedate" name="releasedate">
+	<br />
+
+	<label for="completeddate">Completed Date</label>
+	<input type="date" placeholder="Completeddate" id="completeddate" name="email">
+	<br />
+
+	<label for="completiontime">Completion Time</label>
+	<input type="text" placeholder="Completiontime" id="completiontime" name="completiontime">
+	<br />
+
+	<label for="rating">Personal Rating</label>
+	<input type="number" placeholder="Rating" id="rating" name="rating" min="1" max="10">
+	<br />
+
+	<label for="rec">Reccomend Y/N</label>
+	<input type="radio" placeholder="Rec" id="rec" name="rec" value="Yes"> Yes
+	<input type="radio" placeholder="Rec" id="rec" name="rec" value="No"> No
+	<br />
+
+	<label for="comment">Extra Comment</label>
+	<input type="text" placeholder="Comment" id="comment" name="comment">
+	<br />
+
+	<input type="submit" value="Submit">
+
+</form>
+
+<a href="ViewGame.php">View your game list</a>
+<br>
+
+</body>
+
+
+</html>
