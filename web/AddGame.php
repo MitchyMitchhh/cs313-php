@@ -38,7 +38,7 @@
 	<br />
 
 	<label for="completeddate">Completed Date</label>
-	<input type="date" placeholder="Completed Date" id="completeddate" name="email">
+	<input type="date" placeholder="Completed Date" id="completeddate" name="completeddate">
 	<br />
 
 	<label for="completiontime">Completion Time</label>
@@ -55,8 +55,8 @@
 	<br />
 
 	<label for="comment">Extra Comment</label>
+	<br>
 	<textarea name="Text1" cols="40" rows="5" id="comment name="comment"></textarea>
-	<input type="text" placeholder="Comment" id="comment" name="comment">
 	<br />
 
 	<input type="submit" value="Submit">
