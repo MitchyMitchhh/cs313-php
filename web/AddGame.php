@@ -9,18 +9,6 @@
 
 <form method="POST" action="BackgroundAdd.php">
 
-	<label for="firstname">First Name</label>
-	<input type="text" placeholder="First Name" id="firstname" name="firstname">
-	<br />
-
-	<label for="lastname">Last Name</label>
-	<input type="text" placeholder="Last Name" id="lastname" name="lastname">
-	<br />
-
-	<label for="email">Email</label>
-	<input type="email" placeholder="Email" id="email" name="email">
-	<br />
-
 	<label for="gamename">Game Name</label>
 	<input type="text" placeholder="Game Name" id="gameName" name="gameName">
 	<br />

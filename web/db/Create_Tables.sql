@@ -7,9 +7,7 @@ CREATE TABLE public.user
 	id SERIAL NOT NULL PRIMARY KEY,
 	firstname VARCHAR(100) NOT NULL,
 	lastname VARCHAR(100) NOT NULL,
-	email VARCHAR(100) NOT NULL UNIQUE,
-	loginname VARCHAR(100) NOT NULL UNIQUE,
-	password VARCHAR(100) NOT NULL
+	email VARCHAR(100) NOT NULL UNIQUE
 );
 
 CREATE TABLE public.review
@@ -39,6 +37,4 @@ CREATE TABLE public.log
 	game_id INT NOT NULL REFERENCES public.game(id)
 );
 
-ALTER TABLE public.user
-ADD COLUMN loginname VARCHAR(100) NOT NULL UNIQUE,
-ADD COLUMN password VARCHAR(100) NOT NULL;
+
