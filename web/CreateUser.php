@@ -5,7 +5,7 @@
 </head>
 
 <body>
-<p>Log your Video Game information:</p>
+<p>Create Your Log Account:</p>
 
 <form method="POST" action="Login.php">
 
