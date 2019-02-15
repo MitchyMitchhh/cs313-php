@@ -23,6 +23,7 @@
 </form>
 
 <a href="CreateUser.php">Register New Account</a>
+<br>
 <a href="AddGame.php">Temporary Link to Add Games</a>
 <br>
 
