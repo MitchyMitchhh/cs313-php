@@ -21,7 +21,7 @@ try
 	// Add the Scripture
 	// We do this by preparing the query with placeholder values
 	$query = 'INSERT INTO public.game(gamename, developer, publisher, releasedate, completeddate, completiontime) VALUES(:gamename, :developer, :publisher, :releasedate, :completeddate, :completiontime)';
-	$query = 'INSERT INTO public.review(rating, reccomend, comment) VALUES(:rating, :reccomend, :comment)';
+	
 	$statement = $db->prepare($query);
 	// Now we bind the values to the placeholders. This does some nice things
 	// including sanitizing the input with regard to sql commands.
@@ -31,6 +31,12 @@ try
 	$statement->bindValue(':releasedate', $releasedate);
 	$statement->bindValue(':completeddate', $completeddate);
 	$statement->bindValue(':completiontime', $completiontime);
+
+
+	$queryRating = 'INSERT INTO public.review(rating, reccomend, comment) VALUES(:rating, :reccomend, :comment)';
+
+	$statement = $db->prepare($queryRating);
+
 	$statement->bindValue(':rating', $rating);
 	$statement->bindValue(':reccomend', $reccomend);
 	$statement->bindValue(':comment', $comment);
