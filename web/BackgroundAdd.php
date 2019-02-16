@@ -1,4 +1,4 @@
-<<?php 
+<?php 
 
 session_start();
 // $_SESSION["firstname"] = $_POST["firstname"];
@@ -41,7 +41,6 @@ try
 	$statement->bindValue(':reccomend', $reccomend);
 	$statement->bindValue(':comment', $comment);
 	$statement->execute();
-	}
 }
 catch (Exception $ex)
 {
@@ -57,10 +56,3 @@ die(); // we always include a die after redirects. In this case, there would be 
        // but in general, there could be things after here that we don't want them
        // to see.
 ?>
-
-
-<!-- 
-header('Location: AddGame.php'); /* Redirect browser */
-exit()
-
- ?> -->
