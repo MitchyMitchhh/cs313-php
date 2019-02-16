@@ -11,7 +11,7 @@ $db = get_db();
 <body>
 <div>
 
-<h1>Scripture Resources</h1>
+<h1>Game Log</h1>
 
 <?php
 
