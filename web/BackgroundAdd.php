@@ -11,7 +11,7 @@ $_SESSION["releasedate"] = $_POST["releasedate"];
 $_SESSION["completeddate"] = $_POST["completeddate"];
 $_SESSION["completiontime"] = $_POST["completiontime"];
 $_SESSION["rating"] = $_POST["rating"];
-$_SESSION["rec"] = $_POST["rec"];
+$_SESSION["reccomend"] = $_POST["reccomend"];
 $_SESSION["comment"] = $_POST["comment"];
 
 require("dbConnect.php");
@@ -33,12 +33,12 @@ try
 	$statement->bindValue(':completiontime', $completiontime);
 
 
-	$queryRating = 'INSERT INTO public.review(rating, rec, comment) VALUES(:rating, :rec, :comment)';
+	$queryRating = 'INSERT INTO public.review(rating, reccomend, comment) VALUES(:rating, :reccomend, :comment)';
 
 	$statement = $db->prepare($queryRating);
 
 	$statement->bindValue(':rating', $rating);
-	$statement->bindValue(':rec', $rec);
+	$statement->bindValue(':reccomend', $reccomend);
 	$statement->bindValue(':comment', $comment);
 	$statement->execute();
 }

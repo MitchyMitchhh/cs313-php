@@ -37,9 +37,9 @@
 	<input type="number" placeholder="Rating" id="rating" name="rating" min="1" max="10">
 	<br />
 
-	<label for="rec">Reccomend Y/N</label>
-	<input type="radio" placeholder="Rec" id="rec" name="rec" value="Yes"> Yes
-	<input type="radio" placeholder="Rec" id="rec" name="rec" value="No"> No
+	<label for="reccomend">Reccomend Y/N</label>
+	<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="Yes"> Yes
+	<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="No"> No
 	<br />
 
 	<label for="comment">Extra Comment</label>
