@@ -14,6 +14,8 @@ $_SESSION["rating"] = $_POST["rating"];
 $_SESSION["reccomend"] = $_POST["reccomend"];
 $_SESSION["comment"] = $_POST["comment"];
 
+echo "$gamename $developer $publisher $releasedate $completeddate $completiontime $rating $reccomend $comment";
+
 require("dbConnect.php");
 $db = get_db();
 try
@@ -33,13 +35,13 @@ try
 	$statement->bindValue(':completiontime', $completiontime);
 	$statement->execute();
 
-	// $queryRating = 'INSERT INTO public.review(rating, reccomend, comment) VALUES(:rating, :reccomend, :comment)';
+	$queryRating = 'INSERT INTO public.review(rating, reccomend, comment) VALUES(:rating, :reccomend, :comment)';
 
-	// $statement = $db->prepare($queryRating);
+	$statement = $db->prepare($queryRating);
 
-	// $statement->bindValue(':rating', $rating);
-	// $statement->bindValue(':reccomend', $reccomend);
-	// $statement->bindValue(':comment', $comment);
+	$statement->bindValue(':rating', $rating);
+	$statement->bindValue(':reccomend', $reccomend);
+	$statement->bindValue(':comment', $comment);
 	$statement->execute();
 }
 catch (Exception $ex)
