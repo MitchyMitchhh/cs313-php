@@ -38,7 +38,7 @@ try
 	$statement = $db->prepare($queryRating);
 
 	$statement->bindValue(':rating', $rating);
-	$statement->bindValue(':reccomend', $reccomend);
+	$statement->bindValue(':rec', $rec);
 	$statement->bindValue(':comment', $comment);
 	$statement->execute();
 }
