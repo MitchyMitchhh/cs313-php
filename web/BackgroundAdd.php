@@ -33,7 +33,7 @@ try
 	$statement->bindValue(':completiontime', $completiontime);
 
 
-	$queryRating = 'INSERT INTO public.review(rating, reccomend, comment) VALUES(:rating, :reccomend, :comment)';
+	$queryRating = 'INSERT INTO public.review(rating, rec, comment) VALUES(:rating, :rec, :comment)';
 
 	$statement = $db->prepare($queryRating);
 
