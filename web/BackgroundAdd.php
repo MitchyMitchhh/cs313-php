@@ -33,13 +33,13 @@ try
 	$statement->bindValue(':completiontime', $completiontime);
 	$statement->execute();
 
-	$queryRating = 'INSERT INTO public.review(rating, reccomend, comment) VALUES(:rating, :reccomend, :comment)';
+	// $queryRating = 'INSERT INTO public.review(rating, reccomend, comment) VALUES(:rating, :reccomend, :comment)';
 
-	$statement = $db->prepare($queryRating);
+	// $statement = $db->prepare($queryRating);
 
-	$statement->bindValue(':rating', $rating);
-	$statement->bindValue(':reccomend', $reccomend);
-	$statement->bindValue(':comment', $comment);
+	// $statement->bindValue(':rating', $rating);
+	// $statement->bindValue(':reccomend', $reccomend);
+	// $statement->bindValue(':comment', $comment);
 	$statement->execute();
 }
 catch (Exception $ex)
