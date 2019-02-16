@@ -31,7 +31,7 @@ try
 	$statement->bindValue(':releasedate', $releasedate);
 	$statement->bindValue(':completeddate', $completeddate);
 	$statement->bindValue(':completiontime', $completiontime);
-
+	$statement->execute();
 
 	$queryRating = 'INSERT INTO public.review(rating, reccomend, comment) VALUES(:rating, :reccomend, :comment)';
 
