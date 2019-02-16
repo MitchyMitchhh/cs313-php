@@ -20,7 +20,7 @@ try
 {
 	// Add the Scripture
 	// We do this by preparing the query with placeholder values
-	$query = 'INSERT INTO public.game(gamename, developer, publisher, releasedate, completeddate, completiontime) VALUES(:gamename, :developer, :publisher, :releasedate, :completeddate, :completiontime)';
+	$query = 'INSERT INTO public.game(gamename, developer, publisher, releasedate, datecompleted, completiontime) VALUES(:gamename, :developer, :publisher, :releasedate, :completeddate, :completiontime)';
 	
 	$statement = $db->prepare($query);
 	// Now we bind the values to the placeholders. This does some nice things
