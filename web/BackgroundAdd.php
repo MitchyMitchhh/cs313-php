@@ -13,7 +13,6 @@ $_SESSION["completiontime"] = $_POST["completiontime"];
 $_SESSION["rating"] = $_POST["rating"];
 $_SESSION["reccomend"] = $_POST["reccomend"];
 $_SESSION["comment"] = $_POST["comment"];
-
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +21,10 @@ $_SESSION["comment"] = $_POST["comment"];
 	<title></title>
 </head>
 <body>
+<?
 echo "$gamename $developer $publisher $releasedate $completeddate $completiontime $rating $reccomend $comment";
+?>
 </body>
 </html>
+
+
