@@ -25,8 +25,8 @@
 	<input type="date" placeholder="Release Date" id="releasedate" name="releasedate">
 	<br />
 
-	<label for="completeddate">Completed Date</label>
-	<input type="date" placeholder="Completed Date" id="completeddate" name="completeddate">
+	<label for="datecompleted">Completed Date</label>
+	<input type="date" placeholder="Completed Date" id="datecompleted" name="datecompleted">
 	<br />
 
 	<label for="completiontime">Completion Time</label>
@@ -37,7 +37,7 @@
 	<input type="number" placeholder="Rating" id="rating" name="rating" min="1" max="10">
 	<br />
 
-	<label for="reccomend">Reccomend Y/N</label>
+	<label for="reccomend ">Reccomend Y/N</label>
 	<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="Yes"> Yes
 	<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="No"> No
 	<br />

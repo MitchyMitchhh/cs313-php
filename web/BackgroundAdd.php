@@ -18,7 +18,7 @@ session_start();
 
 $db = get_db();
 
-$sql = "INSERT INTO game(gamename, developer, publisher, releasedate, completeddate, completiontime, rating, comment) VALUES(:gamename, :developer, :publisher, :releasedate, :completeddate, :completiontime, :rating, :comment)";
+$sql = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, rating, comment) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, :rating, :comment)";
 
 $query = $db->prepare($sql);
 $query->bindValue(':gamename', $_POST["gamename"], PDO::PARAM_STR); 
