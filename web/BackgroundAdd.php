@@ -25,7 +25,7 @@ $query->bindValue(':gamename', $_POST["gamename"], PDO::PARAM_STR);
 $query->bindValue(':developer', $_POST["developer"], PDO::PARAM_INT);  
 $query->bindValue(':publisher', $_POST["publisher"], PDO::PARAM_INT); 
 $query->bindValue(':releasedate', $_POST["releasedate"], PDO::PARAM_INT); 
-$query->bindValue(':completeddate', $_POST["completeddate"], PDO::PARAM_INT); 
+$query->bindValue(':datecompleted', $_POST["datecompleted"], PDO::PARAM_INT); 
 $query->bindValue(':completiontime', $_POST["completiontime"], PDO::PARAM_INT); 
 $query->bindValue(':rating', $_POST["rating"], PDO::PARAM_INT); 
 $query->bindValue(':comment', $_POST["comment"], PDO::PARAM_INT); 
