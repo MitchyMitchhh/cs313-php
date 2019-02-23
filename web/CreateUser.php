@@ -7,7 +7,7 @@
 <body>
 <p>Create Your Log Account:</p>
 
-<form method="POST" action="Login.php">
+<form method="POST" action="GenerateUser.php">
 
 	<label for="firstname">First Name</label>
 	<input type="text" placeholder="First Name" id="firstname" name="firstname">
