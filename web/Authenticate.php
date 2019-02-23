@@ -1,5 +1,5 @@
 <?php 
-	require 'dcConnect.php';
+	require 'dbConnect.php';
 
 	session_start()
 

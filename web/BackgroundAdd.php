@@ -1,6 +1,6 @@
 <?php 
 
-require 'dcConnect.php';
+require 'dbConnect.php';
 
 session_start();
 // $_SESSION["firstname"] = $_POST["firstname"];
