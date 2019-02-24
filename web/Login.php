@@ -10,8 +10,8 @@
 <p>Please enter your username and passord or register a new account:</p>
 <form method="POST" action="Authenticate.php">
 
-	<label for="username">Username</label>
-	<input type="text" placeholder="User Name" id="username" name="username">
+	<label for="loginname">Username</label>
+	<input type="text" placeholder="User Name" id="loginname" name="loginname">
 	<br />
 
 	<label for="password">Password</label>
