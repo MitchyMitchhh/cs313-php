@@ -1,28 +1,42 @@
+
 <?php 
-	require 'dbConnect.php';
 
-	session_start()
+ini_set('session.cookie_lifetime', 60 * 60);
 
-	$db = get_db();
+session_start(); 
 
-	$username = $_POST["username"];
-	$pass = $_POST["password"];
+require("dbConnect.php");
 
-	$sql = "SELECT username, password FROM user WHERE username = :username";
+function login($loginname, $password) {
+  
+  $db = get_db(); 
+  $sql = "SELECT user.id, user.loginname, users.password 
+          FROM user
+          WHERE user.loginname = :loginname";
+  $query = $db->prepare($sql); 
+  $query->bindValue(':loginname', $loginname, PDO::PARAM_STR);
+  $query->execute();
+  $results = $query->fetch(PDO::FETCH_ASSOC); 
+   
+  if (password_verify($password, $results["password"])) {
+    $_SESSION["userId"] = $results["id"];
+    $_SESSION["loginName"] = $results["loginname"]; 
+    
+    header("Location: ViewGame.php");
+    die(); 
+  } else {
+    header("Location: login.php"); 
+    die(); 
+  }
+} 
 
-	$query = $db->prepare($sql);
-	$query->bindvalue(":username", $username, PDO::PARAM_STR);
-	$query->bindvalue(":password", $password, PDO::PARAM_STR);
+try {
+  $loginname = $_POST["loginname"]; 
+  $password = $_POST["password"];
+  login($loginname, $password); 
+} catch (PDOException $ex) {
+  echo 'Error!: ' . $ex->getMessage();
+  die();
+}
 
-	$query->execute();
-
-
-
-
-	if (password_verify($pass, $passwordHash)) {
-		$_SESSION["user"] = $userId    	
-	} else {
-    	// Wrong password
-	}
-
-?>
+?> 
