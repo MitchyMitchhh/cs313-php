@@ -10,9 +10,9 @@ require("dbConnect.php");
 function login($loginname, $password) {
   
   $db = get_db(); 
-  $sql = "SELECT user.id, user.loginname, user.password 
+  $sql = "SELECT public.user.id, public.user.loginname, public.user.password 
           FROM public.user
-          WHERE user.loginname = :loginname";
+          WHERE public.user.loginname = :loginname";
   $query = $db->prepare($sql); 
   $query->bindValue(':loginname', $loginname, PDO::PARAM_STR);
   $query->execute();
