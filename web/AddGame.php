@@ -44,7 +44,7 @@
 
 	<label for="comment">Extra Comment</label>
 	<br>
-	<textarea name="Text1" cols="40" rows="5" id="comment name="comment"></textarea>
+	<textarea name="Text1" cols="40" rows="5" id="comment name="comment" name="comment"></textarea>
 	<br />
 
 	<input type="submit" value="Submit">
