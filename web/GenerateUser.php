@@ -5,7 +5,7 @@
 
 	$passwordHash = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
-	$db = connectPostgres(); 
+	$db = get_db(); 
 	$sql = "INSERT INTO user(username, password) VALUES(:username, '" . $passwordHash . "')"; 
 
 	$query = $db->prepare($sql);
