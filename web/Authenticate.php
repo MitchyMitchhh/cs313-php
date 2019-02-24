@@ -25,7 +25,7 @@ function login($loginname, $password) {
     header("Location: ViewGame.php");
     die(); 
   } else {
-    header("Location: login.php"); 
+    header("Location: Login.php"); 
     die(); 
   }
 } 
