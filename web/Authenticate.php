@@ -11,7 +11,7 @@ function login($loginname, $password) {
   
   $db = get_db(); 
   $sql = "SELECT user.id, user.loginname, user.password 
-          FROM user
+          FROM public.user
           WHERE user.loginname = :loginname";
   $query = $db->prepare($sql); 
   $query->bindValue(':loginname', $loginname, PDO::PARAM_STR);
