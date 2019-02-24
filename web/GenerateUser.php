@@ -10,7 +10,6 @@
 
 	$query = $db->prepare($sql);
 	$query->bindValue(':username', $_POST["username"], PDO::PARAM_STR); 
-	$query->bindValue(':credits', $_POST["credits"], PDO::PARAM_INT); 
 	
 	$query->execute(); 
 	
