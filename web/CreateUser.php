@@ -21,8 +21,8 @@
 	<input type="email" placeholder="Email" id="email" name="email">
 	<br />
 
-	<label for="username">Username</label>
-	<input type="text" placeholder="Username" id="username" name="username">
+	<label for="loginname">Username</label>
+	<input type="text" placeholder="Username" id="loginname" name="loginname">
 	<br />
 
 	<label for="password">Password</label>
