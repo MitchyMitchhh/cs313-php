@@ -18,19 +18,28 @@ session_start();
 
 $db = get_db();
 
-$sql = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, rating, comment) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, :rating, :comment)";
+$sqlGame = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime)";
 
-$query = $db->prepare($sql);
+$queryGame = $db->prepare($sqlGame);
 $query->bindValue(':gamename', $_POST["gamename"], PDO::PARAM_STR); 
 $query->bindValue(':developer', $_POST["developer"], PDO::PARAM_INT);  
 $query->bindValue(':publisher', $_POST["publisher"], PDO::PARAM_INT); 
 $query->bindValue(':releasedate', $_POST["releasedate"], PDO::PARAM_INT); 
 $query->bindValue(':datecompleted', $_POST["datecompleted"], PDO::PARAM_INT); 
 $query->bindValue(':completiontime', $_POST["completiontime"], PDO::PARAM_INT); 
+
+$queryGame->execute(); 
+
+$sqlReview = "INSERT INTO review(rating, reccomend, comment) VALUES(:rating, :reccomend, :comment)";
+
+
+$queryReview = $db->prepare($sqlReview); 
+
 $query->bindValue(':rating', $_POST["rating"], PDO::PARAM_INT); 
+$query->bindValue(':reccomend', $_POST["reccomend"], PDO::PARAM_INT); 
 $query->bindValue(':comment', $_POST["comment"], PDO::PARAM_INT); 
 
-$query->execute(); 
+$queryReview->execute(); 
 
 header('Location: AddGame.php');
 die(); 
