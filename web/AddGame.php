@@ -10,7 +10,7 @@
 <form method="POST" action="BackgroundAdd.php">
 
 	<label for="gamename">Game Name</label>
-	<input type="text" placeholder="Game Name" id="gameName" name="gameName">
+	<input type="text" placeholder="Game Name" id="gamename" name="gamename">
 	<br />
 
 	<label for="developer">Developer</label>
