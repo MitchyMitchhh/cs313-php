@@ -17,7 +17,7 @@
 
 <body>
 
-	<div class="container"></div>
+	<div class="container">
 
 	<p>Log your Video Game information:</p>
 
