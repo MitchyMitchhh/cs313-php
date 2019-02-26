@@ -25,7 +25,7 @@ function login($loginname, $password) {
     $_SESSION["userId"] = $queryResults["id"];
     $_SESSION["loginName"] = $queryResults["loginname"]; 
     echo "working";
-    //header("Location: ViewGame.php");
+    header("Location: ViewGame.php");
     die(); 
   } else {
     //header("Location: Login.php"); 
