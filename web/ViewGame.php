@@ -14,10 +14,7 @@
 	require "dbConnect.php";
 	$db = get_db();
 	$userId = $_SESSION["userId"];
-  
-    $query = $db->prepare("SELECT credits
-                           FROM users
-                           WHERE id = :id"); 
+
     //$query->bindValue(':id', $userId, PDO::PARAM_STR); 
     //$query->execute(); 
   
