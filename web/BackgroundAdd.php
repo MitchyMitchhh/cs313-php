@@ -10,7 +10,7 @@ session_start();
 
 $db = get_db();
 
-$sqlGame = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, userid) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, $_SESSION["userId"])";
+$sqlGame = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, userid) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, '$_SESSION["userId"]')";
 
 $queryGame = $db->prepare($sqlGame);
 $queryGame->bindValue(':gamename', $_POST["gamename"], PDO::PARAM_STR); 
