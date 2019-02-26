@@ -6,10 +6,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
-    <!--Let browser know website is optimized for mobile-->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
 
 	<title>Add Games</title>
 
@@ -55,11 +51,6 @@
 		<p><label><input name="reccomend" type="radio" checked /><span>Yes</span></label></p>
     	<p><label><input name="reccomend" type="radio" /><span>No</span></label></p>
 
-		<!-- 
-		<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="Yes"> Yes
-		<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="No"> No
-		<br />
- -->
 		<label for="comment">Extra Comment</label>
 		<br>
 		<textarea cols="40" rows="5" id="comment" name="comment"></textarea>
