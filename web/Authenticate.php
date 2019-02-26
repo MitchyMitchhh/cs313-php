@@ -19,16 +19,16 @@ function login($loginname, $password) {
   
   $queryResults = $query->fetch(PDO::FETCH_ASSOC); 
 
-  echo "password", $password, "rpassword", $queryResults["password"];
+  //echo "password", $password, "rpassword", $queryResults["password"];
    
   if (password_verify($password, $queryResults["password"])) {
     $_SESSION["userId"] = $queryResults["id"];
     $_SESSION["loginName"] = $queryResults["loginname"]; 
-    echo "working";
+    //echo "working";
     header("Location: ViewGame.php");
     die(); 
   } else {
-    //header("Location: Login.php"); 
+    header("Location: Login.php"); 
     die(); 
   }
 } 
