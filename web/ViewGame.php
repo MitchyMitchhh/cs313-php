@@ -31,18 +31,30 @@ $db = get_db();
 	$query->bindValue(':id', $userId, PDO::PARAM_STR); 
     $query->execute();
 	// Go through each result
-	while ($row = $query->fetch(PDO::FETCH_ASSOC))
-	{
-	// The variable "row" now holds the complete record for that
-	// row, and we can access the different values based on their
-	// name
-	$gamename = $row['gamename'];
-	$developer = $row['developer'];
-	$publisher = $row['publisher'];
-	$releasedate = $row['releasedate'];
-	$datecompleted = $datecompleted['datecompleted'];
-	$completiontime = $row['completiontime'];
-	}
+	// while ($row = $query->fetch(PDO::FETCH_ASSOC))
+	// {
+	// // The variable "row" now holds the complete record for that
+	// // row, and we can access the different values based on their
+	// // name
+	// $gamename = $row['gamename'];
+	// $developer = $row['developer'];
+	// $publisher = $row['publisher'];
+	// $releasedate = $row['releasedate'];
+	// $datecompleted = $datecompleted['datecompleted'];
+	// $completiontime = $row['completiontime'];
+	// }
+    $rows = $query->fetchAll();
+	
+	foreach($rows as $row)
+    {
+      $html_chunk = "<b>" . $row["gamename"] . " </b>" .
+                    "<b>" . $row["developer"] . ":</b>" . 
+                    "<b>" . $row["publisher"] . "</b>" . 
+                    "<b>" . $row["releasedate"] . "</b>" .
+                    "<b>" . $row["datecompleted"] . "</b>" .
+                    "<b>" . $row["completiontime"] . "</b>" .;
+    
+    echo $html_chunk;
 
 	echo "<p><strong>$gamename $developer $publisher $releasedate $datecompleted $completiontime</strong> - \"$content\"<p>";
 	}
