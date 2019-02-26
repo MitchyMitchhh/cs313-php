@@ -45,9 +45,10 @@
 		}
 		
 	?>
-	
+
 	<br>
 	<a href="AddGame.php">Add More Games!</a>
+	<a href="Login.php">Sign out</a>
 
 	</div>
 </body>
