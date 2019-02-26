@@ -16,16 +16,19 @@ function login($loginname, $password) {
   $query = $db->prepare($sql); 
   $query->bindValue(':loginname', $loginname, PDO::PARAM_STR);
   $query->execute();
+  
   $results = $query->fetch(PDO::FETCH_ASSOC); 
+
+  echo $password, $results["password"];
    
   if (password_verify($password, $results["password"])) {
     $_SESSION["userId"] = $results["id"];
     $_SESSION["loginName"] = $results["loginname"]; 
     
-    header("Location: ViewGame.php");
+    //header("Location: ViewGame.php");
     die(); 
   } else {
-    header("Location: Login.php"); 
+    //header("Location: Login.php"); 
     die(); 
   }
 } 
