@@ -52,7 +52,7 @@ $db = get_db();
                     "<b>" . $row["publisher"] . "</b>" . 
                     "<b>" . $row["releasedate"] . "</b>" .
                     "<b>" . $row["datecompleted"] . "</b>" .
-                    "<b>" . $row["completiontime"] . "</b>";
+                    "\"" . $row["completiontime"] . "\" </br>";
     
     echo $html_chunk;
 
