@@ -23,7 +23,7 @@
 
 		?>
 
-<!-- 		<table>
+		<!-- <table>
  		<tr>
   		<th>Game Name</th> 
   		<th>Developer</th> 
@@ -34,8 +34,8 @@
   		<th>Rating</th> 
   		<th>Recommendation</th> 
   		<th>Extra Comments</th>
- 		</tr>
- -->
+ 		</tr> -->
+
  		<?php  
 		//if ($userId) {
 			$sql = "SELECT public.game.gamename, public.game.developer, public.game.publisher, public.game.releasedate, public.game.datecompleted, public.game.completiontime, public.game.rating, public.game.reccomend, public.game.comment FROM public.game WHERE public.game.userid='$userId'";
@@ -51,7 +51,7 @@
 					$reccomend = "No";
 				}
 
-	  			echo "<tr>". "<th>" . "Game Name:" . "</th>" . "<th>". "Developer:" . "</th>" . "<th>" . "Publisher:" . "</th>" . "<th>" . "Release Date:" . "</th>" . "<th>" . "Date Completed:" . "</th>" .  "<th>" . "Time Taken to Complete:" . "</th>" . "<th>" . "Rating:" . "</th>" . "<th>" . "Recommend?:" . "</th>" . "<th>" . "Comment:" . "</th>" . "</tr>" . "<tr>" . "<td>" . $row['gamename'] . "</td>" . "<td>" . $row['developer'] . "</td>". "<td>" . $row['publisher'] . "</td>" . "<td>" . $row['releasedate'] . "</td>". "<td>". $row['datecompleted'] . "</td>" . "<td>". $row['completiontime'] . "</td>" . "<td>" . $row['rating'] . "</td>" . "<td>" . $reccomend . "</td>" . "<td>". $row['comment'] . "<td>" . '<br/>';
+	  			echo "<table>". "<tr>". "<th>" . "Game Name:" . "</th>" . "<th>". "Developer:" . "</th>" . "<th>" . "Publisher:" . "</th>" . "<th>" . "Release Date:" . "</th>" . "<th>" . "Date Completed:" . "</th>" .  "<th>" . "Time Taken to Complete:" . "</th>" . "<th>" . "Rating:" . "</th>" . "<th>" . "Recommend?:" . "</th>" . "<th>" . "Comment:" . "</th>" . "</tr>" . "<tr>" . "<td>" . $row['gamename'] . "</td>" . "<td>" . $row['developer'] . "</td>". "<td>" . $row['publisher'] . "</td>" . "<td>" . $row['releasedate'] . "</td>". "<td>". $row['datecompleted'] . "</td>" . "<td>". $row['completiontime'] . "</td>" . "<td>" . $row['rating'] . "</td>" . "<td>" . $reccomend . "</td>" . "<td>". $row['comment'] . "<td>" . "</table>" . '<br/>';
 			}
 		?>
 
