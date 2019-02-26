@@ -51,14 +51,12 @@
 		<input type="number" placeholder="Rating" id="rating" name="rating" min="1" max="10">
 		<br />
 
+		<div class="col s12 radioRequired" name="reccomend" data-error="Error msg here">
+			<label for="reccomend ">Reccomend Y/N</label>
+			<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="Yes"> Yes
+			<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="No"> No
+			<br />
 		</div>
-
-		<label for="reccomend ">Reccomend Y/N</label>
-		<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="Yes"> Yes
-		<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="No"> No
-		<br />
-
-		<div class="container">
 
 		<label for="comment">Extra Comment</label>
 		<br>
