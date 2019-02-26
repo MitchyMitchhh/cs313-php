@@ -51,11 +51,11 @@
 		<input type="number" placeholder="Rating" id="rating" name="rating" min="1" max="10">
 		<br />
 
+		<label for="reccomend ">Reccomend Y/N</label>
 		<p><label><input name="reccomend" type="radio" checked /><span>Yes</span></label></p>
- 
     	<p><label><input name="reccomend" type="radio" /><span>No</span></label></p>
 
-		<!-- <label for="reccomend ">Reccomend Y/N</label>
+		<!-- 
 		<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="Yes"> Yes
 		<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="No"> No
 		<br />
