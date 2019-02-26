@@ -65,6 +65,15 @@
 		}
 
 	}
+	else{
+		$query = $db->prepare("SELECT gamename, developer, publisher, releasedate datecompleted completiontime FROM public.game");
+		$query->bindValue(':id', $userId, PDO::PARAM_STR); 
+    	$query->execute();
+		$row = $query->fetch(PDO::FETCH_ASSOC);
+    	$gamename = $row["gamename"];
+	}
+	
+
 ?>
 
 <a href="AddGame.php">Add More Games!</a>
