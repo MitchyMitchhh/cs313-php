@@ -19,7 +19,7 @@ function login($loginname, $password) {
   
   $results = $query->fetch(PDO::FETCH_ASSOC); 
 
-  echo $password, $results["password"];
+  echo "password" $password, "rpassword" $results["password"];
    
   if (password_verify($password, $results["password"])) {
     $_SESSION["userId"] = $results["id"];
