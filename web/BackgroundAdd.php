@@ -30,7 +30,7 @@ $queryReview->bindValue(':comment', $_POST["comment"], PDO::PARAM_INT);
 $queryReview->execute(); 
 
 $queryResults = $queryReview->fetch(PDO::FETCH_ASSOC);
-$reviewId = $queryResults["id"];
+$reviewId = $queryResults["comment"];
 
 echo $reviewId; 
 
