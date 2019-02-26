@@ -24,7 +24,8 @@
     //$credits = $row["credits"];
 	
 	if ($userId) {
-		$query = $db->prepare("SELECT gamename, developer, publisher, releasedate datecompleted completiontime FROM public.game";);
+		$sql = "SELECT gamename, developer, publisher, releasedate datecompleted completiontime FROM public.game";
+		$query = $db->prepare($sql);
 		$query->bindValue(':id', $userId, PDO::PARAM_STR); 
     	$query->execute();
 	// Go through each result
