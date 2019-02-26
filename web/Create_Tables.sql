@@ -39,6 +39,36 @@ CREATE TABLE public.log
 	game_id INT NOT NULL REFERENCES public.game(id)
 );
 
+
+SQL UPDATE LOG:
+
 ALTER TABLE public.user
 ADD COLUMN loginname VARCHAR(100) NOT NULL UNIQUE,
 ADD COLUMN password VARCHAR(100) NOT NULL;
+
+ALTER TABLE public.game
+DROP COLUMN review_id;
+
+ALTER TABLE public.game
+ALTER COLUMN completiontime TYPE VARCHAR(100);
+
+ALTER TABLE public.review ALTER COLUMN rating drop not null;
+ALTER TABLE public.review ALTER COLUMN reccomend drop not null;
+ALTER TABLE public.review ALTER COLUMN comment drop not null;
+
+ALTER TABLE public.game
+ADD COLUMN userid INTEGER;
+
+ALTER TABLE public.game
+ADD COLUMN userid INTEGER;
+
+ALTER TABLE public.game ADD COLUMN reviewId INTEGER;
+
+ALTER TABLE public.game
+ADD CONSTRAINT reviewId FOREIGN KEY (reviewId) REFERENCES public.review (id);
+
+ALTER TABLE public.game
+ALTER COLUMN releasedate TYPE VARCHAR(100);
+
+ALTER TABLE public.game
+ALTER COLUMN datecompleted TYPE VARCHAR(100);

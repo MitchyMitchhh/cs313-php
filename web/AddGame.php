@@ -36,11 +36,11 @@
 		<br />
 
 		<label for="releasedate">Release Date</label>
-		<input type="date" placeholder="Release Date" id="releasedate" name="releasedate">
+		<input type="text" placeholder="Release Date" id="releasedate" name="releasedate">
 		<br />
 
 		<label for="datecompleted">Completed Date</label>
-		<input type="date" placeholder="Completed Date" id="datecompleted" name="datecompleted">
+		<input type="text" placeholder="Completed Date" id="datecompleted" name="datecompleted">
 		<br />
 
 		<label for="completiontime">Completion Time</label>
