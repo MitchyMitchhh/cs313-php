@@ -4,9 +4,9 @@ require 'dbConnect.php';
 
 session_start();
 
-$userId = $_SESSION["userId"];
+//$userId = $_SESSION["userId"];
 
-echo "ID:" . $userid;
+echo "ID:" . $_SESSION["userId"];
 
 $db = get_db();
 
