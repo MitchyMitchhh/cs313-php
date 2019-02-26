@@ -8,16 +8,28 @@ $userId = $_SESSION["userId"];
 
 $db = get_db();
 
-$sql = "SELECT public.review.id 
-          FROM public.review
-          WHERE public.review.id ='$userid'";
-$query = $db->prepare($sql); 
-$query->execute();
+// $sql = "SELECT public.review.id 
+//           FROM public.review
+//           WHERE public.review.id='$userid'";
+// $query = $db->prepare($sql); 
+// $query->execute();
   
-$queryResults = $query->fetch(PDO::FETCH_ASSOC); 
-echo $queryResults["id"];
+// $queryResults = $query->fetch(PDO::FETCH_ASSOC); 
+// echo $queryResults["id"];
 
-$sqlGame = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, userid) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, $userId)";
+
+
+$sqlReview = "INSERT INTO review(rating, reccomend, comment) VALUES(:rating, :reccomend, :comment)";
+
+$queryReview = $db->prepare($sqlReview); 
+
+$queryReview->bindValue(':rating', $_POST["rating"], PDO::PARAM_INT); 
+$queryReview->bindValue(':reccomend', $_POST["reccomend"], PDO::PARAM_INT); 
+$queryReview->bindValue(':comment', $_POST["comment"], PDO::PARAM_INT); 
+
+$queryReview->execute(); 
+
+$sqlGame = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, userid, reviewid) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, $userId, '$queryReview[id]')";
 
 $queryGame = $db->prepare($sqlGame);
 $queryGame->bindValue(':gamename', $_POST["gamename"], PDO::PARAM_STR); 
@@ -28,17 +40,6 @@ $queryGame->bindValue(':datecompleted', $_POST["datecompleted"], PDO::PARAM_INT)
 $queryGame->bindValue(':completiontime', $_POST["completiontime"], PDO::PARAM_INT);
 
 $queryGame->execute(); 
-
-$sqlReview = "INSERT INTO review(rating, reccomend, comment) VALUES(:rating, :reccomend, :comment)";
-
-
-$queryReview = $db->prepare($sqlReview); 
-
-$queryReview->bindValue(':rating', $_POST["rating"], PDO::PARAM_INT); 
-$queryReview->bindValue(':reccomend', $_POST["reccomend"], PDO::PARAM_INT); 
-$queryReview->bindValue(':comment', $_POST["comment"], PDO::PARAM_INT); 
-
-$queryReview->execute(); 
 
 header('Location: AddGame.php');
 die(); 
