@@ -11,7 +11,7 @@
 
 <?php
 	
-	session_start()
+	session_start();
 
 	require "dbConnect.php";
 	$db = get_db();
