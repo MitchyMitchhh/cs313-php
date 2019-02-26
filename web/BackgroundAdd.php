@@ -8,6 +8,15 @@ $userId = $_SESSION["userId"];
 
 $db = get_db();
 
+$sql = "SELECT public.review.id 
+          FROM public.review
+          WHERE public.review.id ='$userid'";
+$query = $db->prepare($sql); 
+$query->execute();
+  
+$queryResults = $query->fetch(PDO::FETCH_ASSOC); 
+echo $queryResults["id"];
+
 $sqlGame = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, userid) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, $userId)";
 
 $queryGame = $db->prepare($sqlGame);
