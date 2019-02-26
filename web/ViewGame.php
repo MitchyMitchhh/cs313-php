@@ -31,7 +31,7 @@
 		$sql = "SELECT gamename, developer, publisher, releasedate, datecompleted, completiontime FROM public.game";
 		$query = $db->prepare($sql);
 		//$query->bindValue(':id', $userId, PDO::PARAM_STR); 
-    	$query->execute();
+    	//$query->execute();
 	// Go through each result
 	// while ($row = $query->fetch(PDO::FETCH_ASSOC))
 	// {
