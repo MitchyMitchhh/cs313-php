@@ -6,7 +6,7 @@ session_start();
 
 $userId = $_SESSION["userId"];
 
-echo "ID:", $userid;
+echo "ID:" . $userid;
 
 $db = get_db();
 
