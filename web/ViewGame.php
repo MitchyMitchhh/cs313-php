@@ -1,7 +1,3 @@
-<?php
-require "dbConnect.php";
-$db = get_db();
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +11,9 @@ $db = get_db();
 
 <?php
 
-  $userId = $_SESSION["userId"];
+	require "dbConnect.php";
+	$db = get_db();
+	$userId = $_SESSION["userId"];
   
     $query = $db->prepare("SELECT credits
                            FROM users
@@ -57,7 +55,6 @@ $db = get_db();
     echo $html_chunk;
 	}
 	//echo "<p><strong>$gamename $developer $publisher $releasedate $datecompleted $completiontime</strong> - \"$content\"<p>";
-	
 ?>
 
 <a href="AddGame.php">Add More Games!</a>
