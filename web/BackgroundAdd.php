@@ -8,7 +8,7 @@ $userId = $_SESSION["userId"];
 
 $db = get_db();
 
-$sqlGame = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, userid) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, $userId)";
+$sqlGame = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, userid) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, '$userId')";
 
 $queryGame = $db->prepare($sqlGame);
 $queryGame->bindValue(':gamename', $_POST["gamename"], PDO::PARAM_STR); 
@@ -16,7 +16,8 @@ $queryGame->bindValue(':developer', $_POST["developer"], PDO::PARAM_INT);
 $queryGame->bindValue(':publisher', $_POST["publisher"], PDO::PARAM_INT); 
 $queryGame->bindValue(':releasedate', $_POST["releasedate"], PDO::PARAM_INT); 
 $queryGame->bindValue(':datecompleted', $_POST["datecompleted"], PDO::PARAM_INT); 
-$queryGame->bindValue(':completiontime', $_POST["completiontime"], PDO::PARAM_INT); 
+$queryGame->bindValue(':completiontime', $_POST["completiontime"], PDO::PARAM_INT);
+$queryGame->bindValue(':userid', $userId, PDO::PARAM_INT);  
 
 $queryGame->execute(); 
 
