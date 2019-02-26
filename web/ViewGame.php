@@ -10,6 +10,8 @@
 <h1>View Game Log:</h1>
 
 <?php
+	
+	session_start()
 
 	require "dbConnect.php";
 	$db = get_db();
