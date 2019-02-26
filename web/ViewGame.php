@@ -22,7 +22,11 @@
   
     //$row = $query->fetch(PDO::FETCH_ASSOC);
     //$credits = $row["credits"];
-	
+	if ($userId) {
+		echo "hey";
+	}
+
+
 	if ($userId) {
 		$sql = "SELECT public.game.gamename, public.game.developer, public.game.publisher, public.game.releasedate public.game.datecompleted public.game.completiontime FROM public.game";
 		$query = $db->prepare($sql);
