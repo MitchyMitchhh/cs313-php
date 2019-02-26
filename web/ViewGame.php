@@ -49,7 +49,8 @@
 	<br>
 	<a href="AddGame.php">Add More Games!</a>
 	<br>
-	<a href="Login.php">Sign out</a>
+	<br>
+	<a href="Login.php">Sign Out</a>
 
 	</div>
 </body>
