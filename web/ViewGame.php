@@ -35,7 +35,7 @@
 					$reccomend = "No";
 				}
 
-	  			echo ' Game Name: ' . $row['gamename'] . ' Developer: ' . $row['developer'] . ' Publisher: ' . $row['publisher'] . ' Release Date: ' . $row['releasedate'] . ' Date Completed: ' . $row['datecompleted'] . ' Time Taken to Complete: ' . $row['completiontime'] . ' Rating: ' . $row['rating'] . ' Recommend?: ' . $reccomend . ' Comment: ' . $row['comment'] . '<br/>';
+	  			echo  "<tr> <th>Game Name:</th> <th>Developer:</th> <th>Publisher:</th> <th>Release Date:</th> <th>Date Completed:</th> <th>Time Taken to Complete:</th> <th>Rating:</th> <th>Recommend?:</th> <th>Comment:</th> </tr>" . $row['gamename'] . $row['developer'] . $row['publisher'] . $row['releasedate'] . $row['datecompleted'] . $row['completiontime'] . $row['rating'] . $reccomend . $row['comment'] . '<br/>';
 			}
 
 		}
@@ -50,3 +50,30 @@
 	</div>
 </body>
 </html>
+
+
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table
+
+
+
+' Game Name: ' . $row['gamename'] . ' Developer: ' . $row['developer'] . ' Publisher: ' . $row['publisher'] . ' Release Date: ' . $row['releasedate'] . ' Date Completed: ' . $row['datecompleted'] . ' Time Taken to Complete: ' . $row['completiontime'] . ' Rating: ' . $row['rating'] . ' Recommend?: ' . $reccomend . ' Comment: ' . $row['comment'] . '<br/>';
