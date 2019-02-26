@@ -28,7 +28,9 @@ function login($loginname, $password) {
     header("Location: ViewGame.php");
     die(); 
   } else {
-    header("Location: Login.php"); 
+    header("Location: Login.php");
+    $message = "wrong answer";
+	echo "<script type='text/javascript'>alert('$message');</script>";
     die(); 
   }
 } 
