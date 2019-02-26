@@ -61,7 +61,7 @@
 		//}
 		
 	?> -->
-
+	<br>
 	<a href="AddGame.php">Add More Games!</a>
 
 	</div>
