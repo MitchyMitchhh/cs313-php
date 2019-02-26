@@ -17,14 +17,14 @@ function login($loginname, $password) {
   $query->bindValue(':loginname', $loginname, PDO::PARAM_STR);
   $query->execute();
   
-  $results = $query->fetch(PDO::FETCH_ASSOC); 
+  $queryResults = $query->fetch(PDO::FETCH_ASSOC); 
 
-  echo "password", $password, "rpassword", $results["password"];
+  echo "password", $password, "rpassword", $queryResults["password"];
    
-  if (password_verify($password, $results["password"])) {
-    $_SESSION["userId"] = $results["id"];
-    $_SESSION["loginName"] = $results["loginname"]; 
-    
+  if (password_verify($password, $queryResults["password"])) {
+    $_SESSION["userId"] = $queryResults["id"];
+    $_SESSION["loginName"] = $queryResults["loginname"]; 
+    echo "working";
     //header("Location: ViewGame.php");
     die(); 
   } else {
