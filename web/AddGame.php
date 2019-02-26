@@ -51,9 +51,18 @@
 		<input type="number" placeholder="Rating" id="rating" name="rating" min="1" max="10">
 		<br />
 
-		<label for="reccomend ">Reccomend Y/N</label>
+		<div class="input-field col s6">
+      		<input checked required class="validate" type="radio" name="reccomend" value="Yes" id="reccomend">
+      		<label for="reccomend">M</label>
+    	</div>
+    	<div class="input-field col s6">
+      		<input required class="validate" type="radio" name="reccomend" value="No" id="reccomend">
+      		<label for="reccomend">F</label>
+      	</div>
+
+	<!-- 	<label for="reccomend ">Reccomend Y/N</label>
 		<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="Yes"> Yes
-		<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="No"> No
+		<input type="radio" placeholder="Rec" id="reccomend" name="reccomend" value="No"> No -->
 		<br />
 
 		<label for="comment">Extra Comment</label>
