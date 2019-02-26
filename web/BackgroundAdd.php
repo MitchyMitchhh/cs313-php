@@ -4,13 +4,13 @@ require 'dbConnect.php';
 
 session_start();
 
-//$userId = $_SESSION["userId"];
+$userId = $_SESSION["userId"];
 
-//echo "ID:" . $_SESSION["userId"];
+echo "ID:" . $userId];
 
 $db = get_db();
 
-$sqlGame = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, userid) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, '$_SESSION["userId"]')";
+$sqlGame = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, userid) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, $userId)";
 
 $queryGame = $db->prepare($sqlGame);
 $queryGame->bindValue(':gamename', $_POST["gamename"], PDO::PARAM_STR); 
