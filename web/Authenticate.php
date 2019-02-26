@@ -24,13 +24,11 @@ function login($loginname, $password) {
   if (password_verify($password, $queryResults["password"])) {
     $_SESSION["userId"] = $queryResults["id"];
     $_SESSION["loginName"] = $queryResults["loginname"]; 
-    //echo "working";
+    echo "userID";
     header("Location: ViewGame.php");
     die(); 
   } else {
     header("Location: Login.php");
-    $message = "wrong answer";
-	echo "<script type='text/javascript'>alert('$message');</script>";
     die(); 
   }
 } 
