@@ -32,7 +32,7 @@
 
 
 		if ($userId) {
-			$sql = "SELECT public.game.gamename, public.game.developer, public.game.publisher, public.game.releasedate, public.game.datecompleted, public.game.completiontime FROM public.game WHERE public.game.id = $userId";
+			$sql = "SELECT public.game.gamename, public.game.developer, public.game.publisher, public.game.releasedate, public.game.datecompleted, public.game.completiontime FROM public.game WHERE public.game.userid = $userId";
 			$query = $db->prepare($sql);
 			//$query->bindValue(':id', $userId, PDO::PARAM_STR); 
 	    	$query->execute();
