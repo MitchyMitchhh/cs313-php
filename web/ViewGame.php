@@ -45,13 +45,13 @@
 	    	while ($row = $query->fetch(PDO::FETCH_ASSOC))
 			{
 				if ($row[reccomend] == 1) {
-					$reccomend = "Yes";
+					$reccomend = "Recommended";
 				}
 				else {
-					$reccomend = "No";
+					$reccomend = "Not Recommended";
 				}
 
-	  			echo "<table>". "<tr>". "<th>" . "Game Name:" . "</th>" . "<th>". "Developer:" . "</th>" . "<th>" . "Publisher:" . "</th>" . "<th>" . "Release Date:" . "</th>" . "<th>" . "Date Completed:" . "</th>" .  "<th>" . "Time Taken to Complete:" . "</th>" . "<th>" . "Rating:" . "</th>" . "<th>" . "Recommend?:" . "</th>" . "<th>" . "Comment:" . "</th>" . "</tr>" . "<tr>" . "<td>" . $row['gamename'] . "</td>" . "<td>" . $row['developer'] . "</td>". "<td>" . $row['publisher'] . "</td>" . "<td>" . $row['releasedate'] . "</td>". "<td>". $row['datecompleted'] . "</td>" . "<td>". $row['completiontime'] . "</td>" . "<td>" . $row['rating'] . "</td>" . "<td>" . $reccomend . "</td>" . "<td>". $row['comment'] . "<td>" . "</table>" . '<br/>';
+	  			echo "<table>". "<tr>". "<th>" . "Game Name:" . "</th>" . "<th>". "Developer:" . "</th>" . "<th>" . "Publisher:" . "</th>" . "<th>" . "Release Date:" . "</th>" . "<th>" . "Date Completed:" . "</th>" .  "<th>" . "Time Taken to Complete:" . "</th>" . "<th>" . "Rating:" . "</th>" . "<th>" . "Recommendation:" . "</th>" . "<th>" . "Comment:" . "</th>" . "</tr>" . "<tr>" . "<td>" . $row['gamename'] . "</td>" . "<td>" . $row['developer'] . "</td>". "<td>" . $row['publisher'] . "</td>" . "<td>" . $row['releasedate'] . "</td>". "<td>". $row['datecompleted'] . "</td>" . "<td>". $row['completiontime'] . "</td>" . "<td>" . $row['rating'] . "</td>" . "<td>" . $reccomend . "</td>" . "<td>". $row['comment'] . "<td>" . "</table>" . '<br/>';
 			}
 		?>
 
