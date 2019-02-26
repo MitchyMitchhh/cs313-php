@@ -23,7 +23,7 @@
     //$row = $query->fetch(PDO::FETCH_ASSOC);
     //$credits = $row["credits"];
 	
-	if ($userId) {
+	//if ($userId) {
 		$query = $db->prepare("SELECT gamename, developer, publisher, releasedate datecompleted completiontime FROM public.game");
 		$query->bindValue(':id', $userId, PDO::PARAM_STR); 
     	$query->execute();
@@ -54,7 +54,7 @@
   //   		echo $html_chunk;
 		// }
 	echo "<p><strong>$gamename $developer $publisher $releasedate $datecompleted $completiontime</strong> - \"$content\"<p>";
-	}
+	//}
 ?>
 
 <a href="AddGame.php">Add More Games!</a>
