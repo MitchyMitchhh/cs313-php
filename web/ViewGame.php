@@ -73,7 +73,7 @@
 	// 	$row = $query->fetch(PDO::FETCH_ASSOC);
  //    	$gamename = $row["gamename"];
 	// }
-	
+	}	
 
 ?>
 
