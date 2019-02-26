@@ -28,7 +28,14 @@
 
 	    	while ($row = $query->fetch(PDO::FETCH_ASSOC))
 			{
-	  			echo ' Game Name: ' . $row['gamename'] . ' Developer: ' . $row['developer'] . ' Publisher: ' . $row['publisher'] . ' Release Date: ' . $row['releasedate'] . ' Date Completed: ' . $row['datecompleted'] . ' Time Taken to Complete: ' . $row['completiontime'] . ' Rating: ' . $row['rating'] . ' Recommend?: ' . $row['reccomend'] . ' Comment: ' . $row['comment'] . '<br/>';
+				if ($row[reccomend] == 1) {
+					$reccomend = "Yes";
+				}
+				else {
+					$reccomend = "No";
+				}
+
+	  			echo ' Game Name: ' . $row['gamename'] . ' Developer: ' . $row['developer'] . ' Publisher: ' . $row['publisher'] . ' Release Date: ' . $row['releasedate'] . ' Date Completed: ' . $row['datecompleted'] . ' Time Taken to Complete: ' . $row['completiontime'] . ' Rating: ' . $row['rating'] . ' Recommend?: ' . $reccomend . ' Comment: ' . $row['comment'] . '<br/>';
 			}
 
 		}
