@@ -48,6 +48,7 @@ $db = get_db();
 	}
 ?>
 
+<a href="ViewGame.php">Add More Games!</a>
 
 </div>
 
