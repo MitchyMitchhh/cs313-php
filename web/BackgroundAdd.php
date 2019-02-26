@@ -46,7 +46,7 @@ echo $reviewId;
 
 // $queryGame->execute(); 
 
-header('Location: AddGame.php');
+//header('Location: AddGame.php');
 die(); 
 
 ?>
