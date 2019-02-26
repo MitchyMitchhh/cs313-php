@@ -56,13 +56,12 @@ $db = get_db();
     
     echo $html_chunk;
 
-	echo "<p><strong>$gamename $developer $publisher $releasedate $datecompleted $completiontime</strong> - \"$content\"<p>";
+	//echo "<p><strong>$gamename $developer $publisher $releasedate $datecompleted $completiontime</strong> - \"$content\"<p>";
 	}
 ?>
 
 <a href="AddGame.php">Add More Games!</a>
 
 </div>
-
 </body>
 </html>
