@@ -32,7 +32,7 @@ $queryReview->execute();
 $queryResults = $queryReview->fetch(PDO::FETCH_ASSOC);
 $reviewId = $queryResults["id"];
 
-echo reviewId; 
+echo $reviewId; 
 
 $sqlGame = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, userid, reviewid) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, $userId, '$reviewId')";
 
