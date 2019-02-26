@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>View Game Log List</title>
@@ -44,14 +45,14 @@
 	
 	foreach($rows as $row)
     {
-      $html_chunk = "<b>" . $row["gamename"] . " </b>" .
-                    "<b>" . $row["developer"] . ":</b>" . 
+		$html_chunk = "<b>" . $row["gamename"] . " </b>" .
+                    "<b>" . $row["developer"] . "</b>" . 
                     "<b>" . $row["publisher"] . "</b>" . 
                     "<b>" . $row["releasedate"] . "</b>" .
                     "<b>" . $row["datecompleted"] . "</b>" .
                     "\"" . $row["completiontime"] . "\" </br>";
     
-    echo $html_chunk;
+    	echo $html_chunk;
 	}
 	echo "<p><strong>$gamename $developer $publisher $releasedate $datecompleted $completiontime</strong> - \"$content\"<p>";
 ?>
