@@ -28,10 +28,10 @@
 
 
 	if ($userId) {
-		//$sql = "SELECT gamename, developer, publisher, releasedate, datecompleted, completiontime FROM public.game";
-		//$query = $db->prepare($sql);
-		//$query->bindValue(':id', $userId, PDO::PARAM_STR); 
-    	//$query->execute();
+		$sql = "SELECT gamename, developer, publisher, releasedate, datecompleted, completiontime FROM public.game";
+		$query = $db->prepare($sql);
+		$query->bindValue(':id', $userId, PDO::PARAM_STR); 
+    	$query->execute();
 	// Go through each result
 	// while ($row = $query->fetch(PDO::FETCH_ASSOC))
 	// {
@@ -60,20 +60,20 @@
 	// 	}
 	// //echo "<p><strong>$gamename $developer $publisher $releasedate $datecompleted $completiontime</strong> - \"$content\"<p>";
 
- //    	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-	// 	{
- //  			echo ' Game Name: ' . $row['gamename'] . ' Developer: ' . $row['developer'] . ' Publisher: ' . $row['publisher'] . ' Release Date: ' . $row['releasedate'] . ' Date Completed: ' . $row['datecompleted'] . ' Time Taken to Complete: ' . $row['completiontime'] . '<br/>';
-	// 	}
+    	while ($row = $query->fetch(PDO::FETCH_ASSOC))
+		{
+  			echo ' Game Name: ' . $row['gamename'] . ' Developer: ' . $row['developer'] . ' Publisher: ' . $row['publisher'] . ' Release Date: ' . $row['releasedate'] . ' Date Completed: ' . $row['datecompleted'] . ' Time Taken to Complete: ' . $row['completiontime'] . '<br/>';
+		}
 
-	// }
-	// else{
-	// 	$query = $db->prepare("SELECT gamename, developer, publisher, releasedate datecompleted completiontime FROM public.game");
-	// 	$query->bindValue(':id', $userId, PDO::PARAM_STR); 
- //    	$query->execute();
-	// 	$row = $query->fetch(PDO::FETCH_ASSOC);
- //    	$gamename = $row["gamename"];
-	// }
-	}	
+	}
+	else{
+		$query = $db->prepare("SELECT gamename, developer, publisher, releasedate datecompleted completiontime FROM public.game");
+		$query->bindValue(':id', $userId, PDO::PARAM_STR); 
+    	$query->execute();
+		$row = $query->fetch(PDO::FETCH_ASSOC);
+    	$gamename = $row["gamename"];
+	}
+	
 
 ?>
 
