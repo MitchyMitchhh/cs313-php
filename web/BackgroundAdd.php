@@ -19,7 +19,7 @@ $queryGame->bindValue(':publisher', $_POST["publisher"], PDO::PARAM_INT);
 $queryGame->bindValue(':releasedate', $_POST["releasedate"], PDO::PARAM_INT); 
 $queryGame->bindValue(':datecompleted', $_POST["datecompleted"], PDO::PARAM_INT); 
 $queryGame->bindValue(':completiontime', $_POST["completiontime"], PDO::PARAM_INT);
-$queryGame->bindValue(':userid', $userId, PDO::PARAM_INT);  
+//$queryGame->bindValue(':userid', $userId, PDO::PARAM_INT);  
 
 $queryGame->execute(); 
 
