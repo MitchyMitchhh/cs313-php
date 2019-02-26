@@ -28,7 +28,7 @@
 
 	    	while ($row = $query->fetch(PDO::FETCH_ASSOC))
 			{
-	  			echo ' Game Name: ' . $row['gamename'] . ' Developer: ' . $row['developer'] . ' Publisher: ' . $row['publisher'] . ' Release Date: ' . $row['releasedate'] . ' Date Completed: ' . $row['datecompleted'] . ' Time Taken to Complete: ' . $row['completiontime'] . '<br/>';
+	  			echo ' Game Name: ' . $row['gamename'] . ' Developer: ' . $row['developer'] . ' Publisher: ' . $row['publisher'] . ' Release Date: ' . $row['releasedate'] . ' Date Completed: ' . $row['datecompleted'] . ' Time Taken to Complete: ' . $row['completiontime'] . ' Rating: ' . $row['rating'] . ' Recommend?: ' . $row['reccomend'] . ' Comment: ' . $row['comment'] . '<br/>';
 			}
 
 		}
