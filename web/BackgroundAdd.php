@@ -6,6 +6,8 @@ session_start();
 
 $userId = $_SESSION["userId"];
 
+echo "ID:", $userid;
+
 $db = get_db();
 
 $sqlGame = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, userid) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, '$userId')";
