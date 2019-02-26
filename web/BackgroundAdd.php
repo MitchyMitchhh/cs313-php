@@ -29,7 +29,9 @@ $queryReview->bindValue(':comment', $_POST["comment"], PDO::PARAM_INT);
 
 $queryReview->execute(); 
 
-$sqlGame = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, userid, reviewid) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, $userId, '$queryReview[id]')";
+$reviewId = $queryReview[id];
+
+$sqlGame = "INSERT INTO game(gamename, developer, publisher, releasedate, datecompleted, completiontime, userid, reviewid) VALUES(:gamename, :developer, :publisher, :releasedate, :datecompleted, :completiontime, $userId, $reviewId)";
 
 $queryGame = $db->prepare($sqlGame);
 $queryGame->bindValue(':gamename', $_POST["gamename"], PDO::PARAM_STR); 
