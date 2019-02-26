@@ -54,6 +54,10 @@
  //    		echo $html_chunk;
 	// 	}
 	// //echo "<p><strong>$gamename $developer $publisher $releasedate $datecompleted $completiontime</strong> - \"$content\"<p>";
+    	$row = $query->fetch(PDO::FETCH_ASSOC);
+    	$gamename = $row["gamename"];
+
+    	echo $gamename;
 
     	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 		{
